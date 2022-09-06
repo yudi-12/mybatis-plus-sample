@@ -7,6 +7,12 @@
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>mybatis-plus-quickstart</artifactId>
+    <artifactId>mybatis-plus-curd</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>p6spy</groupId>
+            <artifactId>p6spy</artifactId>
+        </dependency>
+    </dependencies>
 </project>

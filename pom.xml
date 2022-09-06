@@ -9,6 +9,7 @@
 
   <modules>
     <module>mybatis-plus-quickstart</module>
+    <module>mybatis-plus-curd</module>
   </modules>
 
   <!--统一管理jar包和版本-->
@@ -20,7 +21,8 @@
     <log4j.version>1.2.17</log4j.version>
     <lombok.version>1.16.18</lombok.version>
     <mysql.version>5.1.47</mysql.version>
-    <mybatis-plus.version>3.4.3.3</mybatis-plus.version>
+    <mybatis-plus.version>3.5.1</mybatis-plus.version>
+    <p6spy.version>3.9.1</p6spy.version>
   </properties>
 
   <!--  子模块继承之后，提供作用：锁定版本 + 子module不用写groupId和version-->
@@ -58,6 +60,12 @@
         <artifactId>junit</artifactId>
         <version>${junit.version}</version>
       </dependency>
+      <!-- p6spy -->
+      <dependency>
+        <groupId>p6spy</groupId>
+        <artifactId>p6spy</artifactId>
+        <version>${p6spy.version}</version>
+      </dependency>
       <!-- log4j -->
       <dependency>
         <groupId>log4j</groupId>
@@ -66,4 +74,28 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.baomidou</groupId>
+      <artifactId>mybatis-plus-boot-starter</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
 </project>

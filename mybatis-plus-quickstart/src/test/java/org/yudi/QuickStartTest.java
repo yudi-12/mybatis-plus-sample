@@ -1,5 +1,6 @@
 package org.yudi;
 
+import org.assertj.core.api.ListAssert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,16 +11,19 @@ import org.yudi.mapper.UserMapper;
 
 import java.util.List;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 @SpringBootTest
 @RunWith(SpringRunner.class)
-public class MybatisPlusApplicationTest {
+public class QuickStartTest {
 
     @Autowired
     private UserMapper userMapper;
 
     @Test
     public void listUser(){
-        List<User> userList = userMapper.selectList(null);
-        userList.forEach(System.out::println);
+        List<User> list = userMapper.selectList(null);
+        assertThat(list).isNotEmpty();
+        list.forEach(System.out::println);
     }
 }

@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 @MapperScan("org.yudi.mapper")
-public class MybatisPlusApplication {
+public class QuickStart {
     public static void main( String[] args ) {
-        SpringApplication.run(MybatisPlusApplication.class, args);
+        SpringApplication.run(QuickStart.class, args);
     }
 }

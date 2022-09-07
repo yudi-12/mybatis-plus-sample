@@ -1,10 +1,10 @@
 package org.yudi.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
 import org.yudi.entity.User;
 
-@Repository
+@Service
 public interface UserMapper extends BaseMapper<User> {
 
 }

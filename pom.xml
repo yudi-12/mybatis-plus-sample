@@ -10,6 +10,7 @@
   <modules>
     <module>mybatis-plus-quickstart</module>
     <module>mybatis-plus-curd</module>
+    <module>mybatis-plus-wrapper</module>
   </modules>
 
   <!--统一管理jar包和版本-->
